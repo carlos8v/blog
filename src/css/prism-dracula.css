@@ -1,0 +1,176 @@
+/**
+ * Dracula Theme originally by Zeno Rocha [@zenorocha]
+ * https://draculatheme.com/
+ *
+ * Ported for PrismJS by Albert Vallverdu [@byverdu]
+ */
+
+ :root {
+  --comment:    #6272a4;
+  --default:    #f8f8f2;
+
+  --cyan:       #8BE9FD;
+  --green:      #50FA7B;
+  --orange:     #FFB86C;
+  --pink:       #FF79C6;
+  --purple:     #BD93F9;
+  --red:        #FF5555;
+  --yellow:     #F1FA8C;
+}
+
+code,
+pre {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+  color: var(--default);
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  padding: 0;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*='language-'],
+pre {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+  background: #1B1F230D;
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+  background: #282a36;
+}
+
+/* Inline code */
+:not(pre) > code {
+  padding: 5px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  background: #1B1F230D;
+}
+
+:not(pre) > code[class*='language-'] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--comment);
+}
+
+.token.punctuation {
+  color: var(--default);
+}
+
+.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: var(--pink);
+}
+
+.token.boolean,
+.token.number {
+  color: var(--purple);
+}
+
+.token.selector,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: var(--yellow);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: var(--default);
+}
+
+.token.atrule,
+.token.attr-value {
+  color: var(--yellow);
+}
+
+.token.attr-name,
+.token.function {
+  color: var(--green);
+}
+
+.language-bash .function,
+.language-shell .function {
+  color: var(--default);
+}
+
+.token.class-name {
+  color: var(--cyan);
+}
+
+.token.regex-flags,
+.token.keyword {
+  color: var(--pink);
+}
+
+.token.regex-delimiter {
+  color: var(--red);
+}
+
+.token.regex {
+  color: var(--yellow);
+}
+
+.token.parameter,
+.token.important {
+  color: var(--orange);
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+@media (max-width: 600px) {
+  code,
+  pre {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,34 @@
+---
+layout: layouts/base
+css: css/article.css
+---
+
+<main class="main-wrapper">
+  <article class="article-container">
+    {% if cover %}
+      <img class="article-cover" src="{{ cover }}" />
+    {% endif %}
+    <div class="article-content">
+      <h1 class="article-title">{{ title }}<small>{{ page.date | date: "%b %d %Y" }}</small></h1>
+      <div class="author-container">
+        <img src="
+          {% if author.profile %}
+            {{ author.profile }}
+          {% else %}
+            https://ui-avatars.com/api/?name={{ author.name }}&background=333&color=fff&size=36
+          {% endif %}"
+        />
+        <strong>{{ author.name }}</strong>
+      </div>
+      {% if tags %}
+        <div>
+          {% for tag in tags offset:1 %}
+            <span class="article-tag">#{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+      <hr>
+      {{ content | safe }}
+    </div>
+  </article>
+</main>

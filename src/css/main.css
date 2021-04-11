@@ -1,0 +1,122 @@
+:root {
+  --text-primary: #333;
+  --text-secondary: #DFE2E5;
+  --text-gray: #F6F8FA;
+  --link-color: #0366d6;
+  --primary: #3B49DF;
+  --bg-primary: #EEF0F1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #BBB;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgb(0, 0, 0, 0.15);
+}
+
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-margin: 70px 0 70px 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background: var(--bg-primary);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--text-secondary);
+  margin: 30px 0;
+}
+
+blockquote {
+  margin: 0;
+  color: #6a737d;
+  padding: 0 16px;
+  border-left: 4px solid var(--text-secondary);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  padding: 10px;
+  border: 1px solid var(--text-secondary);
+}
+
+table tr:nth-child(2n) {
+  background: var(--text-gray);
+}
+
+.main-wrapper {
+  margin-top: 60px;
+  display: flex;
+  padding: 15px 30px;
+  gap: 15px 30px;
+}
+
+.article-tag {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 4px;
+  color: white;
+  background: var(--text-primary);
+  text-decoration: none;
+}
+
+.main-footer {
+  margin-top: 30px;
+  background: var(--text-primary);
+  color: var(--text-secondary);
+  border-bottom: 4px solid var(--primary);
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 600px) {
+  table {
+    overflow: hidden;
+    overflow-x: scroll;
+    display: block;
+    white-space: nowrap;
+  }
+
+  .main-wrapper {
+    padding: 10px;
+  }
+}
