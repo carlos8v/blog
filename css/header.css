@@ -20,7 +20,7 @@
 }
 
 .nav-link, .nav-link-mobile {
-  font-size: 16px;
+  font-size: 0.9rem;
   display: inline-block;
   color: white;
 }
