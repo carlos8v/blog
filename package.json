@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A simple markdown tech blog",
   "scripts": {
-    "build": "rm dist/ -rf && eleventy",
-    "serve": "rm dist/ -rf && eleventy --serve"
+    "build": "rm dist/ -rf && MODE=production eleventy",
+    "serve": "rm dist/ -rf && MODE=development eleventy --serve"
   },
   "author": "Carlos Souza <carlos.pessoal@hotmail.com>",
   "license": "MIT",
