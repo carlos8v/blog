@@ -31,7 +31,7 @@ pagination:
         {% if article.data.tags.size > 1 %}
           <div>
             {% for tag in article.data.tags offset:1 %}
-              <span class="article-tag" href="#">{{ tag }}</span>
+              <span class="article-tag">#{{ tag }}</span>
             {% endfor %}
           </div>
         {% endif %}
