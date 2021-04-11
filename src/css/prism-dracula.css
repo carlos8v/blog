@@ -121,3 +121,10 @@ pre[class*='language-'] {
 .token.entity {
   cursor: help;
 }
+
+@media (max-width: 600px) {
+  code,
+  pre {
+    font-size: 0.9rem;
+  }
+}

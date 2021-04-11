@@ -68,15 +68,6 @@ table {
   border-collapse: collapse;
 }
 
-@media (max-width: 600px) {
-  table {
-    overflow: hidden;
-    overflow-x: scroll;
-    display: block;
-    white-space: nowrap;
-  }
-}
-
 table td, table th {
   padding: 10px;
   border: 1px solid var(--text-secondary);
@@ -112,4 +103,18 @@ table tr:nth-child(2n) {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+@media (max-width: 600px) {
+  table {
+    overflow: hidden;
+    overflow-x: scroll;
+    display: block;
+    white-space: nowrap;
+  }
+
+  .main-wrapper {
+    padding: 10px;
+  }
 }
