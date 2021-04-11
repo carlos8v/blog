@@ -1,0 +1,15 @@
+{
+  "name": "md-talk",
+  "version": "1.0.0",
+  "description": "A simple markdown tech blog",
+  "scripts": {
+    "build": "rm dist/ -rf && eleventy",
+    "serve": "rm dist/ -rf && eleventy --serve"
+  },
+  "author": "Carlos Souza <carlos.pessoal@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0"
+  }
+}
