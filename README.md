@@ -57,7 +57,7 @@ Check this [link]({{ domain }}/articles/not-in-the-website-yet)
 ...
 ```
 
-The `{{ domain }}` will be translated to the correct domain once the code is merged in the repository or to `https://localhost:8080` if you are hosting locally by the `serve` script.
+The `{{ domain }}` will be translated to the correct domain once the code is merged in the repository or to `http://localhost:8080` if you are hosting locally by the `serve` script.
 
 ## Tests 🔧️
 
