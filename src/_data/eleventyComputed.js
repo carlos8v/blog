@@ -1,5 +1,5 @@
 const local = 'http://localhost:8080'
-const domainPath = 'https://carlos8v.github.io/md-talk';
+const domainPath = 'https://carlos8v.github.io/md-talks';
 const DEBUB = process.env.MODE === 'development';
 
 module.exports = {
