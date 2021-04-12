@@ -7,10 +7,6 @@
   --bg-primary: #EEF0F1;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 *::-webkit-scrollbar {
@@ -29,6 +25,7 @@ html {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
   scroll-margin: 70px 0 70px 0;
 }
 
