@@ -29,13 +29,17 @@
   scroll-margin: 70px 0 70px 0;
 }
 
+html {
+  font-size: 18px;
+}
+
 body {
   background: var(--bg-primary);
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-size: 18px;
   color: var(--text-primary);
   margin: 0;
   padding: 0;
+  line-height: 1.5rem;
 }
 
 a {
