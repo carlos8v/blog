@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "A simple markdown tech blog",
   "scripts": {
+    "test": "jest --runInBand",
+    "test:watch": "jest --watchAll",
     "build": "rm dist/ -rf && MODE=production eleventy",
     "serve": "rm dist/ -rf && MODE=development eleventy --serve"
   },
@@ -10,6 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+    "jest": "^26.6.3"
   }
 }
