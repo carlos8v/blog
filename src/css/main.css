@@ -29,6 +29,7 @@ html {
 
 * {
   box-sizing: border-box;
+  scroll-margin: 70px 0 70px 0;
 }
 
 body {

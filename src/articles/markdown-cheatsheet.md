@@ -4,7 +4,7 @@ cover: https://camo.githubusercontent.com/dad33741b8f8f2570a8da0e0472c7cf0b30ec8
 author:
   name: "Adam Pritchard"
   profile: "https://avatars.githubusercontent.com/u/425687?v=4"
-tags: ["Markdown"]
+tags: ["Markdown", "🇺🇸️"]
 ---
 
 This is intended as a quick reference and showcase. For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
