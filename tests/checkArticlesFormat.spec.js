@@ -10,6 +10,15 @@ expect.extend({
         message: () => `\x1B[31m'${folder}'\x1B[39m file should have property \x1B[32m${property}\x1B[39m`,
         pass: false,
       };
+  },
+  hasContent(recieved, { folder, expected }) {
+    return recieved === expected ?
+    {
+      pass: true,
+    } : {
+      message: () => `\x1B[31m'${folder}'\x1B[39m file should have some \x1B[32mcontent\x1B[39m`,
+      pass: false,
+    }
   }
 });
 
@@ -23,6 +32,7 @@ describe('Check if all articles have the correct structure', () => {
   const hasTitle = (article) => /title:/g.test(article);
   const hasAuthor = (article) => /author:/g.test(article);
   const hasName = (article) => /name:/g.test(article);
+  const hasContent = (article) => article !== '' && !/^\s*$/g.test(article);
 
   beforeAll(() => {
     articlesFolder = getArticles();
@@ -57,6 +67,17 @@ describe('Check if all articles have the correct structure', () => {
         folder,
         expected: true,
         property: 'name',
+      });
+    })
+  })
+
+  it('Check if articles have some Content', () => {
+    const separator = '---';
+    articlesFolder.forEach(folder => {
+      const article = fs.readFileSync(`${articlesFolderPath}/${folder}`, 'utf8').split(separator);
+      expect(hasContent(article[2].trim())).hasContent({
+        folder,
+        expected: true,
       });
     })
   })
