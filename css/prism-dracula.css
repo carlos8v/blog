@@ -5,19 +5,29 @@
  * Ported for PrismJS by Albert Vallverdu [@byverdu]
  */
 
-code {
-  font-size: 1rem;
-  padding: 5px;
-  background: #1B1F230D;
-  border-radius: 4px;
+ :root {
+  --comment:    #6272a4;
+  --default:    #f8f8f2;
+
+  --cyan:       #8BE9FD;
+  --green:      #50FA7B;
+  --orange:     #FFB86C;
+  --pink:       #FF79C6;
+  --purple:     #BD93F9;
+  --red:        #FF5555;
+  --yellow:     #F1FA8C;
+}
+
+code,
+pre {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
 
 code[class*='language-'],
 pre[class*='language-'] {
-  color: #f8f8f2;
+  color: var(--default);
   background: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   text-align: left;
   padding: 0;
   white-space: pre;
@@ -41,6 +51,7 @@ pre {
   margin: 0.5em 0;
   overflow: auto;
   border-radius: 0.3em;
+  background: #1B1F230D;
 }
 
 :not(pre) > code[class*='language-'],
@@ -49,6 +60,13 @@ pre[class*='language-'] {
 }
 
 /* Inline code */
+:not(pre) > code {
+  padding: 5px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  background: #1B1F230D;
+}
+
 :not(pre) > code[class*='language-'] {
   padding: 0.1em;
   border-radius: 0.3em;
@@ -59,11 +77,11 @@ pre[class*='language-'] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #6272a4;
+  color: var(--comment);
 }
 
 .token.punctuation {
-  color: #f8f8f2;
+  color: var(--default);
 }
 
 .namespace {
@@ -75,21 +93,20 @@ pre[class*='language-'] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: #ff79c6;
+  color: var(--pink);
 }
 
 .token.boolean,
 .token.number {
-  color: #bd93f9;
+  color: var(--purple);
 }
 
 .token.selector,
-.token.attr-name,
 .token.string,
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #50fa7b;
+  color: var(--yellow);
 }
 
 .token.operator,
@@ -98,23 +115,44 @@ pre[class*='language-'] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-  color: #f8f8f2;
+  color: var(--default);
 }
 
 .token.atrule,
-.token.attr-value,
-.token.function,
+.token.attr-value {
+  color: var(--yellow);
+}
+
+.token.attr-name,
+.token.function {
+  color: var(--green);
+}
+
+.language-bash .function,
+.language-shell .function {
+  color: var(--default);
+}
+
 .token.class-name {
-  color: #f1fa8c;
+  color: var(--cyan);
 }
 
+.token.regex-flags,
 .token.keyword {
-  color: #8be9fd;
+  color: var(--pink);
 }
 
-.token.regex,
+.token.regex-delimiter {
+  color: var(--red);
+}
+
+.token.regex {
+  color: var(--yellow);
+}
+
+.token.parameter,
 .token.important {
-  color: #ffb86c;
+  color: var(--orange);
 }
 
 .token.important,
