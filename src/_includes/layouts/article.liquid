@@ -9,7 +9,7 @@ css: css/article.css
       <img class="article-cover" src="{{ cover }}" />
     {% endif %}
     <div class="article-content">
-      <h1 class="article-title">{{ title }}<small>{{ page.date | date: "%b %d %Y" }}</small></h1>
+      <h1 class="article-title">{{ title }}<small>{{ page.date | displayDate: locale }}</small></h1>
       <div class="author-container">
         <img src="
           {% if author.profile %}
