@@ -10,7 +10,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addFilter("displayDate", function(date) {
-    return new Intl.DateTimeFormat('default', {
+    return new Intl.DateTimeFormat('pt-BR', {
       day: 'numeric',
       month: 'long',
       year: 'numeric'
