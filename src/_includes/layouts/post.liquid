@@ -1,15 +1,15 @@
 ---
 layout: layouts/base
-css: css/article.css
+css: css/post.css
 ---
 
 <main class="main-wrapper">
-  <article class="article-container">
+  <article class="post-container">
     {% if cover %}
-      <img class="article-cover" src="{{ cover }}" />
+      <img class="post-cover {{ coverPosition }}" src="{{ cover }}" />
     {% endif %}
-    <div class="article-content">
-      <h1 class="article-title">{{ title }}<small>{{ page.date | displayDate: locale }}</small></h1>
+    <div class="post-content">
+      <h1 class="post-title">{{ title }}<small>{{ page.date | displayDate }}</small></h1>
       <div class="author-container">
         <img src="
           {% if author.profile %}
@@ -23,7 +23,7 @@ css: css/article.css
       {% if tags %}
         <div>
           {% for tag in tags offset:1 %}
-            <span class="article-tag">#{{ tag }}</span>
+            <span class="post-tag">{{ tag }}</span>
           {% endfor %}
         </div>
       {% endif %}

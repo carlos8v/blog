@@ -9,8 +9,12 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.setDataDeepMerge(true);
-  eleventyConfig.addFilter("displayDate", function(date, locale) {
-    return new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(date);
+  eleventyConfig.addFilter("displayDate", function(date) {
+    return new Intl.DateTimeFormat('default', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    }).format(date);
   });
 
   eleventyConfig.setTemplateFormats(['md', 'liquid']);

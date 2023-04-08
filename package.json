@@ -1,6 +1,6 @@
 {
-  "name": "md-talks",
-  "version": "1.0.0",
+  "name": "blog",
+  "version": "0.2.0",
   "description": "A simple markdown tech blog",
   "scripts": {
     "test": "jest --runInBand",
