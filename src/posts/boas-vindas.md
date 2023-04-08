@@ -1,4 +1,13 @@
-# Blog &middot; ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) ![Website Up](https://img.shields.io/website?url=https%3A%2F%2Fblog.carlos8v.dev)
+---
+title: "Iniciando o projeto com tudo! 🚀"
+cover: "https://www.markdownguide.org/assets/images/markdown-guide-og.jpg"
+author:
+  name: "Carlos Souza"
+  profile: "https://avatars.githubusercontent.com/u/53836455?v=4"
+tags: ["Projeto", "🇧🇷️"]
+---
+
+# [Blog]({{ repo }}) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]({{ repo }}/blob/main/LICENSE) ![Website Up](https://img.shields.io/website?url=https%3A%2F%2Fblog.carlos8v.dev)
 Um simples blog sobre tecnologia.
 
 ## O Projeto 💡️
@@ -28,7 +37,6 @@ Outras informações opcionais:
 ```md
 ...
 cover: "https://my-awesome-picture.com/crazy-pic.png"
-coverPosition: "top"
 author:
   name: "Carlos Souza"
   profile: "https://avatars.githubusercontent.com/u/53836455?v=4"
