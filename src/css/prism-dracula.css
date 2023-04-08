@@ -61,10 +61,11 @@ pre[class*='language-'] {
 
 /* Inline code */
 :not(pre) > code {
-  padding: 5px;
+  padding: 0 6px;
   font-size: 0.9rem;
+  display: inline-block;
   border-radius: 4px;
-  background: #1B1F230D;
+  background: #323542;
 }
 
 :not(pre) > code[class*='language-'] {
