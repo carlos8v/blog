@@ -9,7 +9,7 @@ css: css/post.css
       <img class="post-cover {{ coverPosition }}" src="{{ cover }}" />
     {% endif %}
     <div class="post-content">
-      <h1 class="post-title">{{ title }}<small>{{ page.date | displayDate }}</small></h1>
+      <h1 class="post-title">{{ title }}<small>Última atualização: {{ page.date | displayDate }}</small></h1>
       <div class="author-container">
         <img src="
           {% if author.profile %}
