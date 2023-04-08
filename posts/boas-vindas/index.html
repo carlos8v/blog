@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../../css/header.css">
+  <link rel="stylesheet" type="text/css" href="../../css/prism-dracula.css">
+	
+  <link rel="stylesheet" type="text/css" href="../../css/post.css">
+	
+	<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+	<link rel="alternate icon" href="../../favicon.ico">
+	<link rel="mask-icon" href="../../favicon.svg" color="#ff8a01">
+	<title>Carlos8v | Blog</title>
+</head>
+<body>
+	<header class="main-header">
+  <nav class="nav-container">
+    <a href="https://carlos8v.github.io/blog"><img src="../../favicon.svg"></a>
+    <div class="nav-list">
+      <a href="https://carlos8v.github.io/blog" class="nav-link">Home</a>
+      <a href="https://github.com/carlos8v/blog" target="_blank" class="nav-link">Github</a>
+    </div>
+  </nav>
+  <svg id="nav-mobile" class="nav-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14">
+    <path class="nav-icon-top" d="M1 2a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2z"></path>
+    <path class="nav-icon-middle" d="M1 8a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2z"></path>
+    <path class="nav-icon-bottom" d="M1 14a1 1 0 0 1 0-2h18a1 1 0 0 1 0 2z"></path>
+  </svg>
+  <div class="nav-list-mobile">
+    <a href="https://carlos8v.github.io/blog" class="nav-link-mobile">Home</a>
+    <a href="https://github.com/carlos8v/blog" target="_blank" class="nav-link-mobile">Github</a>
+  </div>
+  <script>
+    const navMobile = document.querySelector('#nav-mobile')
+    navMobile.addEventListener('click', () => { navMobile.classList.toggle('nav-mobile-active') })
+  </script>
+</header>
+
+	
+<main class="main-wrapper">
+  <article class="post-container">
+    
+      <img class="post-cover " src="https://www.markdownguide.org/assets/images/markdown-guide-og.jpg" />
+    
+    <div class="post-content">
+      <h1 class="post-title">Iniciando o projeto com tudo! 🚀<small>April 8, 2023</small></h1>
+      <div class="author-container">
+        <img src="
+          
+            https://avatars.githubusercontent.com/u/53836455?v=4
+          "
+        />
+        <strong>Carlos Souza</strong>
+      </div>
+      
+        <div>
+          
+            <span class="post-tag">Projeto</span>
+          
+            <span class="post-tag">🇧🇷️</span>
+          
+        </div>
+      
+      <hr>
+      <h1><a href="https://github.com/carlos8v/blog">Blog</a> · <a href="https://github.com/carlos8v/blog/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license"></a> <img src="https://img.shields.io/website?url=https%3A%2F%2Fblog.carlos8v.dev" alt="Website Up"></h1>
+<p>Um simples blog sobre tecnologia.</p>
+<h2>O Projeto 💡️</h2>
+<p>O objetivo principal é compartilhar conhecimento com todo mundo, o mais <strong>simples</strong> possível. O projeto usa <a href="https://github.com/11ty/eleventy">eleventy</a> para transformar qualquer arquivo <code>.md</code> na pasta <code>src/posts</code> em um template <em>html</em> customizado. Cada post ganha sua própria url hospedado no <a href="https://pages.github.com/">Github Pages</a>. Os últimos posts postados aparecem na página principal do site.</p>
+<h2>Configuração 🤝️</h2>
+<p>Todos os posts precisam estar dentro da pasta <code>src/posts</code> e seguir o formado: <code>seu-post.md</code>.</p>
+<p>Informações importantes no <em>frontmatter</em> do post:</p>
+<pre class="language-md"><code class="language-md"><span class="token front-matter-block"><span class="token punctuation">---</span><br><span class="token front-matter yaml language-yaml">title: "My First Article! 🚀"<br>author:<br>  name: "Carlos Souza"</span><br><span class="token punctuation">---</span></span><br><br><span class="token title important"><span class="token punctuation">#</span> Hello World!</span><br>...</code></pre>
+<p>As informações <code>title</code>, <code>author</code> e <code>name</code> são <strong>essenciais</strong> para a formação do código no site.</p>
+<p>Outras informações opcionais:</p>
+<pre class="language-md"><code class="language-md">...<br>cover: "https://my-awesome-picture.com/crazy-pic.png"<br>author:<br>  name: "Carlos Souza"<br>  profile: "https://avatars.githubusercontent.com/u/53836455?v=4"<br><span class="token title important">tags: ["Tutorial"]<br><span class="token punctuation">---</span></span><br>...</code></pre>
+<h2>Desenvolvimento 🎯️</h2>
+<p>Rodando localmente:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span><br>$ <span class="token function">npm</span> run serve</code></pre>
+<p>O servidor estará disponível na url <code>http://localhost:8080</code>. Para hospedar altere a variável <code>domain</code> no arquivo <code>src/_data/eleventyComputed.js</code>.</p>
+<pre class="language-md"><code class="language-md">...<br>Check this <span class="token url">[<span class="token content">link</span>](<span class="token url">https://carlos8v.github.io/blog/articles/ainda-nao-esta-no-site</span>)</span><br>...</code></pre>
+<p>O <code>https://carlos8v.github.io/blog</code> será traduzido para o domínio correto assim que o código for mergeado no repositório ou para <code>http://localhost:8080</code> se você estiver hospedando localmente pelo script <code>serve</code>;</p>
+<h2>Testes 🔧️</h2>
+<p>Para rodar os testes, primeiro você precisa instalar as dependências, então rodar <code>npm test</code>:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span><br>$ <span class="token function">npm</span> <span class="token builtin class-name">test</span></code></pre>
+<p>Por enquanto, você precisa preencher esses requisitos:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><code>Post.md</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Post <strong>precisa</strong> ter a informação <code>title</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Post <strong>precisa</strong> ter a informação <code>author</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Post <strong>precisa</strong> ter a informação <code>name</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Post <strong>precisa</strong> ter algum <code>conteúdo</code></td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+  </article>
+</main>
+
+</body>
+</html>

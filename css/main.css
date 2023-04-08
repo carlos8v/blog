@@ -1,10 +1,12 @@
 :root {
-  --text-primary: #333;
-  --text-secondary: #DFE2E5;
-  --text-gray: #F6F8FA;
-  --link-color: #0366d6;
+  --text-primary: white;
+  --text-secondary: #c8c8c8;
+  --text-gray: #323542;
+  --link-color: white;
   --primary: #3B49DF;
-  --bg-primary: #EEF0F1;
+  --bg-primary: #15161b;
+  --bg-secondary: #1e1f26;
+  --border: #383b3e;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
@@ -15,7 +17,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #BBB;
+  background-color: #323542;
 }
 
 *::-webkit-scrollbar-track {
@@ -30,7 +32,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 body {
@@ -54,8 +56,12 @@ a:hover {
 hr {
   border: 0;
   height: 1px;
-  background: var(--text-secondary);
+  background: var(--border);
   margin: 30px 0;
+}
+
+p {
+  color: var(--text-secondary);
 }
 
 blockquote {
@@ -72,11 +78,11 @@ table {
 
 table td, table th {
   padding: 10px;
-  border: 1px solid var(--text-secondary);
+  border: 1px solid var(--border);
 }
 
 table tr:nth-child(2n) {
-  background: var(--text-gray);
+  background: var(--bg-secondary);
 }
 
 .main-wrapper {
@@ -86,13 +92,13 @@ table tr:nth-child(2n) {
   gap: 15px 30px;
 }
 
-.article-tag {
+.post-tag {
   display: inline-block;
   padding: 5px;
   margin: 5px 0;
   border-radius: 4px;
   color: white;
-  background: var(--text-primary);
+  background: var(--text-gray);
   text-decoration: none;
 }
 
