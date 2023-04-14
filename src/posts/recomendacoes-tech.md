@@ -8,6 +8,8 @@ author:
 ## Objetivo
 Centralizar blogs, artigos, posts e vídeos interessantes sobre o mundo da programação.
 
+# Backend
+
 ### Arquitetura e infraestrutura:
 
 Em inglês:
@@ -26,6 +28,14 @@ Em inglês:
 - [🎬 Cross-Site Request Forgery (CSRF) (VIDEO)](https://www.youtube.com/watch?v=eWEgUcHPle0)
 - [🎬 Insecure Direct Object Reference (IDOR) (VIDEO)](https://www.youtube.com/watch?v=rloqMGcPMkI)
 - [🎬 Cross-Site Scripting (XSS) Explained (VIDEO)](https://www.youtube.com/watch?v=EoaDgUgS6QA)
+
+# Frontend
+
+### Estilização
+
+Em inglês:
+- [🖥️ Beautifully designed components built with Radix UI and Tailwind CSS (SITE)](https://ui.shadcn.com/)
+- [🖥️ Build websites even faster with components on top of Tailwind CSS (SITE)](https://flowbite.com/)
 
 ### Canais tech
 - [Theo](https://www.youtube.com/@t3dotgg)
