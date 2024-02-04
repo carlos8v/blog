@@ -9,33 +9,8 @@ pagination:
 ---
 <main class="main-wrapper">
   <section class="home-container">
-    <div class="post-container new-post">
-      <h3>Existem {{ posts.size }} posts publicados na plataforma!</h3>
-      <p>Se mantenha atualizado e compartilhe conhecimento!</p>
-      <a href="https://github.com/carlos8v/blog">Postar agora</a>
-    </div>
-    <h2>Últimos posts:</h2>
     {% for post in posts %}
-      <div class="post-container">
-        <a class="post-title" href="{{ domain }}{{ post.url }}">{{ post.data.title }}</a>
-        <div class="author-container">
-          <img src="
-            {% if post.data.author.profile %}
-              {{ post.data.author.profile }}
-            {% else %}
-              https://ui-avatars.com/api/?name={{ post.data.author.name }}&background=333&color=fff&size=36
-            {% endif %}"
-          />
-          <strong>{{ post.data.author.name }}</strong>
-        </div>
-        {% if post.data.tags.size > 1 %}
-          <div>
-            {% for tag in post.data.tags offset:1 %}
-              <span class="post-tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
-        {% endif %}
-      </div>
+      <a class="post-title" href="{{ domain }}{{ post.url }}">{{ post.data.title }}</a>
     {% endfor %}
   </section>
 </main>
