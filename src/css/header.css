@@ -4,7 +4,7 @@
   width: 100%;
   background: var(--bg-primary);
   border-bottom: 1px solid var(--border);
-  padding: 10px 30px;
+  padding: 10px;
 }
 
 .main-header > nav {
@@ -32,8 +32,8 @@
 
 .nav-mobile {
   position: absolute;
-  top: 15px;
-  right: 30px;
+  top: 18px;
+  right: 15px;
   width: 24px;
   height: 24px;
   fill: white;
@@ -87,6 +87,10 @@
 }
 
 @media (min-width: 600px) {
+  .main-header {
+    padding: 10px 30px;
+  }
+
   .nav-mobile {
     display: none;
   }
