@@ -1,0 +1,28 @@
+---
+import '../styles/post.css'
+import '../styles/prism-dracula.css'
+
+import FormattedDate from '../components/FormattedDate.astro'
+const { title, pubDate, cover, updatedDate } = Astro.props
+---
+
+<main class="main-wrapper">
+  <article class="post-container">
+    {cover && <img class="post-cover" src={cover} />}
+    <div class="post-content">
+      <h1 class="post-title">
+        {title}
+        <small>Publicado em: <FormattedDate date={pubDate} /></small>
+        {
+          updatedDate && (
+            <small>
+              Última atualização: <FormattedDate date={updatedDate} />
+            </small>
+          )
+        }
+      </h1>
+      <hr />
+      <slot />
+    </div>
+  </article>
+</main>

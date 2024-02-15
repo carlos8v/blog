@@ -1,8 +1,6 @@
 ---
 title: "Certificados digitais auto assinados"
-author:
-  name: "Carlos Souza"
-  profile: "https://avatars.githubusercontent.com/u/53836455?v=4"
+pubDate: '2024-02-03'
 ---
 
 ### Requisitos

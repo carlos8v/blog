@@ -1,0 +1,25 @@
+---
+import '../styles/home.css'
+import { getCollection } from 'astro:content'
+
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+import Base from '../layouts/Base.astro'
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+)
+---
+
+<Base title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <main class="main-wrapper">
+    <section class="home-container">
+      {
+        posts.map((post) => (
+          <a class="post-title" href={`/blog/${post.slug}`}>
+            {post.data.title}
+          </a>
+        ))
+      }
+    </section>
+  </main>
+</Base>

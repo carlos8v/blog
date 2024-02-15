@@ -1,18 +1,22 @@
 {
   "name": "blog",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A simple markdown tech blog",
+  "type": "module",
   "scripts": {
-    "test": "jest --runInBand",
-    "test:watch": "jest --watchAll",
-    "build": "rm dist/ -rf && MODE=production eleventy",
-    "serve": "rm dist/ -rf && MODE=development eleventy --serve"
+    "test": "vitest",
+    "dev": "astro dev --port 8080",
+    "build": "astro build"
   },
   "author": "Carlos Souza <carlos.pessoal@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
-    "jest": "^26.6.3"
+    "vitest": "^1.2.2"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^2.1.1",
+    "@astrojs/rss": "^4.0.5",
+    "@astrojs/sitemap": "^3.0.5",
+    "astro": "^4.4.0"
   }
 }

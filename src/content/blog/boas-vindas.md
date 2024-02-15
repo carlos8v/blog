@@ -1,13 +1,11 @@
 ---
-title: "Iniciando o projeto com tudo! 🚀"
-cover: "https://www.markdownguide.org/assets/images/markdown-guide-og.jpg"
-author:
-  name: "Carlos Souza"
-  profile: "https://avatars.githubusercontent.com/u/53836455?v=4"
-tags: ["Projeto", "🇧🇷️"]
+title: 'Iniciando o projeto com tudo! 🚀'
+cover: 'https://www.markdownguide.org/assets/images/markdown-guide-og.jpg'
+pubDate: '2022-04-12'
 ---
 
-# [Blog]({{ repo }}) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]({{ repo }}/blob/main/LICENSE) ![Website Up](https://img.shields.io/website?url=https%3A%2F%2Fblog.carlos8v.dev)
+# [Blog](https://github.com/carlos8v/blog) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/carlos8v/blog/blob/main/LICENSE) ![Website Up](https://img.shields.io/website?url=https%3A%2F%2Fblog.carlos8v.dev)
+
 Um simples blog sobre tecnologia.
 
 ## O Projeto 💡️
@@ -22,26 +20,30 @@ Informações importantes no _frontmatter_ do post:
 
 ```md
 ---
-title: "My First Article! 🚀"
+title: 'My First Article! 🚀'
 author:
-  name: "Carlos Souza"
+  name: 'Carlos Souza'
 ---
 
 # Hello World!
+
 ...
 ```
 
 As informações `title`, `author` e `name` são **essenciais** para a formação do código no site.
 
 Outras informações opcionais:
+
 ```md
 ...
 cover: "https://my-awesome-picture.com/crazy-pic.png"
 author:
-  name: "Carlos Souza"
-  profile: "https://avatars.githubusercontent.com/u/53836455?v=4"
+name: "Carlos Souza"
+profile: "https://avatars.githubusercontent.com/u/53836455?v=4"
 tags: ["Tutorial"]
+
 ---
+
 ...
 ```
 
@@ -64,7 +66,6 @@ Check this [link]({{ domain }}/articles/ainda-nao-esta-no-site)
 
 O `{{ domain }}` será traduzido para o domínio correto assim que o código for mergeado no repositório ou para `http://localhost:8080` se você estiver hospedando localmente pelo script `serve`;
 
-
 ## Testes 🔧️
 
 Para rodar os testes, primeiro você precisa instalar as dependências, então rodar `npm test`:
@@ -76,9 +77,9 @@ $ npm test
 
 Por enquanto, você precisa preencher esses requisitos:
 
-| `Post.md` |
-|:--|
-| Post **precisa** ter a informação `title` |
+| `Post.md`                                  |
+| :----------------------------------------- |
+| Post **precisa** ter a informação `title`  |
 | Post **precisa** ter a informação `author` |
-| Post **precisa** ter a informação `name` |
-| Post **precisa** ter algum `conteúdo` |
+| Post **precisa** ter a informação `name`   |
+| Post **precisa** ter algum `conteúdo`      |

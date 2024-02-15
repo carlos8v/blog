@@ -1,8 +1,6 @@
 ---
 title: "Recomendações Tech"
-author:
-  name: "Carlos Souza"
-  profile: "https://avatars.githubusercontent.com/u/53836455?v=4"
+pubDate: '2023-04-08'
 ---
 
 ## Objetivo
