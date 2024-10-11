@@ -1,0 +1,1 @@
+import"./hoisted.D6Kg2dgp.js";class t extends HTMLElement{constructor(){super();const e=this.querySelector("#pubDate");e&&this.dataset.datetime&&(e.innerHTML=new Date(this.dataset.datetime).toLocaleDateString(void 0,{year:"numeric",month:"short",day:"numeric"}))}}customElements.define("pub-date",t);
