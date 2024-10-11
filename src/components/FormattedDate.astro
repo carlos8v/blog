@@ -1,17 +1,34 @@
 ---
 interface Props {
-	date: Date;
+  date: Date
 }
 
-const { date } = Astro.props;
+const { date } = Astro.props
 ---
 
-<time datetime={date.toISOString()}>
-	{
-		date.toLocaleDateString(undefined, {
-			year: 'numeric',
-			month: 'short',
-			day: 'numeric',
-		})
-	}
-</time>
+<pub-date data-datetime={date}>
+  <time id="pubDate" datetime={date.toISOString()}></time>
+</pub-date>
+
+<script>
+  class PubDate extends HTMLElement {
+    constructor() {
+      super()
+
+      const pubDate = this.querySelector('#pubDate')
+
+      if (pubDate && this.dataset.datetime) {
+        pubDate.innerHTML = new Date(this.dataset.datetime).toLocaleDateString(
+          undefined,
+          {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+          }
+        )
+      }
+    }
+  }
+
+  customElements.define('pub-date', PubDate)
+</script>
