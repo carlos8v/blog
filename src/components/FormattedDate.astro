@@ -10,7 +10,7 @@ const { date } = Astro.props
   <time id="pubDate" datetime={date.toISOString()}></time>
 </pub-date>
 
-<script>
+<script is:inline>
   class PubDate extends HTMLElement {
     constructor() {
       super()
